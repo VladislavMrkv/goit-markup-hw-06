@@ -629,20 +629,17 @@ body {
 }
 
 .right-footer-div {
-  padding-top: 12px;
   margin-left: 70px;
 }
 
 .footer-container {
   display: flex;
 
-  vertical-align: baseline;
+  align-items: baseline;
 }
 
 .email-footer-div {
-  padding-top: 12px;
-
-  margin-left: 93px;
+  margin-left: auto;
 }
 
 .footer-btn {
@@ -693,6 +690,18 @@ body {
   border-radius: 4px;
 
   background: transparent;
+
+  padding-left: 15px;
+  padding-right: 15px;
+
+  outline: none;
+
+  color: var(--primary-title-color);
+}
+
+.footer-input:hover,
+.footer-input:focus {
+  border-color: var(--accent-color);
 }
 
 .footer-input-word {
@@ -713,8 +722,8 @@ body {
 
 .backdrop {
   position: fixed;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   background-color: var(--backdrop-color);
 
   top: 0;
@@ -756,6 +765,16 @@ body {
   right: 8px;
 
   box-sizing: border-box;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  cursor: pointer;
+}
+
+.close-btn:hover .modal_close_icon,
+.close-btn:focus .modal_close_icon {
+  fill: var(--accent-color);
 }
 
 .backdrop.is-hidden {
@@ -862,6 +881,11 @@ body {
   border: none;
 }
 
+.modal-btn:hover,
+.modal-btn:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.602);
+}
+
 .input-icon {
   position: absolute;
   left: 12px;
@@ -885,6 +909,7 @@ body {
 
   display: flex;
   align-items: center;
+  justify-content: center;
 
   margin-bottom: 30px;
 }
@@ -912,6 +937,10 @@ body {
 .modal-checkbox:checked + .check-text span {
   background-color: var(--accent-color);
   border: none;
+}
+
+.checkbox-icon:hover {
+  cursor: pointer;
 }
 
 /*---------portfolio--------*/
